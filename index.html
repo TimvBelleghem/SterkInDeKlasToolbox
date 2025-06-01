@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sterk in de Klas Toolbox</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Optioneel: Flowbite voor componenten (accordeon, modals) -->
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.css" />
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navigatiebalk -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-2xl font-bold">Sterk in de Klas</a>
+        <div>
+          <button data-collapse-toggle="mobile-menu" type="button" class="sm:hidden">
+            <span class="sr-only">Open main menu</span>
+            <!-- icoon hamburger -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+          <ul id="mobile-menu" class="hidden sm:flex space-x-4">
+            <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+            <li>
+              <div class="relative group">
+                <button class="hover:text-blue-600">Thema’s</button>
+                <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 py-2 rounded">
+                  <a href="themes/theme1.html" class="block px-4 py-1 hover:bg-gray-200">Thema 1</a>
+                  <a href="themes/theme2.html" class="block px-4 py-1 hover:bg-gray-200">Thema 2</a>
+                  <!-- … -->
+                  <a href="themes/theme12.html" class="block px-4 py-1 hover:bg-gray-200">Thema 12</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero-sectie -->
+  <header class="bg-white mt-6 mb-8">
+    <div class="max-w-4xl mx-auto text-center py-12 px-4">
+      <h1 class="text-4xl font-extrabold mb-4">Welkom bij jouw Toolbox “Sterk in de Klas”</h1>
+      <p class="text-lg text-gray-600">Klaar om jouw toolkit uit te bouwen met 12 thema’s vol tips en tricks?</p>
+    </div>
+  </header>
+
+  <!-- Grid met 12 thema-kaarten -->
+  <main class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Thema 1 -->
+      <a href="themes/theme1.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <!-- voorbeeld-icoon (kan vervangen door SVG/afbeelding) -->
+          <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">1</span>
+          </div>
+          <h2 class="text-xl font-semibold">Gesprekstechnieken</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Do’s & Don’ts, actief luisteren, omgaan met agressie.</p>
+      </a>
+      <!-- Thema 2 -->
+      <a href="themes/theme2.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">2</span>
+          </div>
+          <h2 class="text-xl font-semibold">Verbale & Non-verbaal</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Lichaamstaal, expressieve aspecten, stemgebruik.</p>
+      </a>
+      <!-- … herhaal voor thema 3 t/m 12 -->
+      <a href="themes/theme3.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-indigo-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">3</span>
+          </div>
+          <h2 class="text-xl font-semibold">Stem & Presentatie</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Stemhygiëne, spreektechnieken, checklist.</p>
+      </a>
+      <!-- thema 4 -->
+      <a href="themes/theme4.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-yellow-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">4</span>
+          </div>
+          <h2 class="text-xl font-semibold">Groepsdynamica</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Tuckman, groepsfasen, informele leiders.</p>
+      </a>
+      <!-- thema 5 -->
+      <a href="themes/theme5.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-red-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">5</span>
+          </div>
+          <h2 class="text-xl font-semibold">Klasmanagement</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Invloed groepsdynamica, praktijkvoorbeelden.</p>
+      </a>
+      <!-- thema 6 -->
+      <a href="themes/theme6.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-pink-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">6</span>
+          </div>
+          <h2 class="text-xl font-semibold">Positief Klimaat</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Psychologische veiligheid, growth mindset.</p>
+      </a>
+      <!-- thema 7 -->
+      <a href="themes/theme7.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-purple-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">7</span>
+          </div>
+          <h2 class="text-xl font-semibold">Preventief Management</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Regels & afspraken, rubrics.</p>
+      </a>
+      <!-- thema 8 -->
+      <a href="themes/theme8.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-teal-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">8</span>
+          </div>
+          <h2 class="text-xl font-semibold">Ongewenst Gedrag</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Positief gedrag, relatiegerichte aanpak.</p>
+      </a>
+      <!-- thema 9 -->
+      <a href="themes/theme9.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-orange-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">9</span>
+          </div>
+          <h2 class="text-xl font-semibold">Ordeverstoring</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Stappenplan signaleren, interveniëren.</p>
+      </a>
+      <!-- thema 10 -->
+      <a href="themes/theme10.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-lime-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">10</span>
+          </div>
+          <h2 class="text-xl font-semibold">Veerkracht</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Zelftest, mindfulness-oefeningen.</p>
+      </a>
+      <!-- thema 11 -->
+      <a href="themes/theme11.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-cyan-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">11</span>
+          </div>
+          <h2 class="text-xl font-semibold">Strategieën Veerkracht</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Dagelijkse reflectie, zelfcompassie.</p>
+      </a>
+      <!-- thema 12 -->
+      <a href="themes/theme12.html" class="block bg-white rounded-lg shadow hover:shadow-xl transition p-6">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-rose-200 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">12</span>
+          </div>
+          <h2 class="text-xl font-semibold">Diversiteit & Soc. Psychologie</h2>
+        </div>
+        <p class="mt-2 text-gray-500 text-sm">Vooroordelen, bruggen bouwen.</p>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-12 py-6">
+    <div class="max-w-4xl mx-auto text-center text-gray-600 text-sm">
+      © 2025 Sterk in de Klas – Toolbox<br />
+      Gemaakt door [Jouw Naam], Hogeschool Gent<br />
+      <a href="https://github.com/username/SterkInDeKlasToolbox" class="text-blue-600 hover:underline">GitHub Repository</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
