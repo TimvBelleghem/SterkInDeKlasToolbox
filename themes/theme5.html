@@ -10,13 +10,39 @@
   <nav class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center h-16">
-        <a href="../index.html" class="text-2xl font-bold">Sterk in de Klas</a>
-        <ul class="flex space-x-4">
-          <li><a href="../index.html" class="hover:text-blue-600">Home</a></li>
-          <li><a href="theme1.html" class="text-blue-600 font-semibold">Thema 1</a></li>
-          <li><a href="theme2.html" class="hover:text-blue-600">Thema 2</a></li>
-          <!-- … andere thema-links -->
-        </ul>
+        <a href="/index.html" class="text-2xl font-bold">Sterk in de Klas</a>
+        <div>
+          <button data-collapse-toggle="mobile-menu" type="button" class="sm:hidden">
+            <span class="sr-only">Open main menu</span>
+            <!-- icoon hamburger -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+          <ul id="mobile-menu" class="hidden sm:flex space-x-4">
+            <li><a href="/index.html" class="hover:text-blue-600">Home</a></li>
+            <li>
+              <div class="relative group">
+                <button class="hover:text-blue-600">Thema’s</button>
+                <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 py-2 rounded">
+                  <a href="/themes/theme1.html" class="block px-4 py-1 hover:bg-gray-200">Thema 1</a>
+                  <a href="/themes/theme2.html" class="block px-4 py-1 hover:bg-gray-200">Thema 2</a>
+                  <a href="/themes/theme3.html" class="block px-4 py-1 hover:bg-gray-200">Thema 3</a>
+                  <a href="/themes/theme4.html" class="block px-4 py-1 hover:bg-gray-200">Thema 4</a>
+                  <a href="/themes/theme5.html" class="block px-4 py-1 hover:bg-gray-200">Thema 5</a>
+                  <a href="/themes/theme6.html" class="block px-4 py-1 hover:bg-gray-200">Thema 6</a>
+                  <a href="/themes/theme7.html" class="block px-4 py-1 hover:bg-gray-200">Thema 7</a>
+                  <a href="/themes/theme8.html" class="block px-4 py-1 hover:bg-gray-200">Thema 8</a>
+                  <a href="/themes/theme9.html" class="block px-4 py-1 hover:bg-gray-200">Thema 9</a>
+                  <a href="/themes/theme10.html" class="block px-4 py-1 hover:bg-gray-200">Thema 10</a>
+                  <a href="/themes/theme11.html" class="block px-4 py-1 hover:bg-gray-200">Thema 11</a>
+                  <a href="/themes/theme12.html" class="block px-4 py-1 hover:bg-gray-200">Thema 12</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
